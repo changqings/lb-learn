@@ -54,7 +54,7 @@ fn main() {
     let mut my_server = Server::new(Some(opt)).unwrap();
     my_server.bootstrap();
 
-    // 127.0.0.1:83 is not health, just to show health_check work
+    // 127.0.0.1:83 is not healthy, just to make sure health_check work
     let mut upstreams =
         LoadBalancer::try_from_iter(["127.0.0.1:81", "127.0.0.1:82", "127.0.0.1:83"]).unwrap();
 
