@@ -1,0 +1,15 @@
+[package]
+name = "lb-learn"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.80"
+env_logger = "0.11.3"
+log = "0.4.21"
+pingora = { version = "0.2.0", features = ["lb"] }
+pingora-core = "0.2.0"
+pingora-http = "0.2.0"
+pingora-load-balancing = "0.2.0"
+pingora-proxy = "0.2.0"
+structopt = "0.3.26"
